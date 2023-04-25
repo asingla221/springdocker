@@ -1,0 +1,19 @@
+apiVersion: app/v1
+kind: Deployement
+metadata:
+ name: dockerse
+spec:
+ selector:
+  matchLabels:
+   app: dockerse
+  replicas: 2    
+ template:
+  metadata:
+  labels:
+   app: dockerse
+ spec:
+  container:
+  - name : dockeres
+    image: docker.io/name/dockeres:v1
+    ports:
+    - containerPort:8080 
