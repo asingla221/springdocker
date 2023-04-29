@@ -16,4 +16,4 @@ spec:
   - name : dockeres
     image: docker.io/name/dockeres:v1
     ports:
-    - containerPort:8080 
+    - containerPort:9010 
